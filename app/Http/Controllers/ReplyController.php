@@ -10,6 +10,11 @@ use App\Http\Resources\ReplyResource;
 
 class ReplyController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('jwt', ['except' => ['index','show']]);
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -18,16 +23,6 @@ class ReplyController extends Controller
     public function index(Status $status)
     {
         return ReplyResource::collection($status->replies);
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
     }
 
     /**
