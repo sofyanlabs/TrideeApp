@@ -7,6 +7,8 @@ use App\User;
 
 class Reply extends Model
 {
+    protected $guarded = [];
+    
     public function status() 
     {
         return $this->belongsTo(Status::class);
