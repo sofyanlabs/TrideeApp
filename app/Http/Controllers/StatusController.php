@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Model\Status;
 use Illuminate\Http\Request;
+use Symfony\Component\HttpFoundation\Response;
+use App\Http\Resources\StatusResource;
 
 class StatusController extends Controller
 {
@@ -14,17 +16,7 @@ class StatusController extends Controller
      */
     public function index()
     {
-        //
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
+        return StatusResource::collection(Status::latest()->get());
     }
 
     /**
@@ -35,7 +27,8 @@ class StatusController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        auth()->user()->status()->create($request->all());
+        return response('Created', Response::HTTP_CREATED);
     }
 
     /**
@@ -46,7 +39,7 @@ class StatusController extends Controller
      */
     public function show(Status $status)
     {
-        //
+        return new StatusResource($status);
     }
 
     /**
@@ -80,6 +73,7 @@ class StatusController extends Controller
      */
     public function destroy(Status $status)
     {
-        //
+        $status->delete();
+        return response(null, Response::HTTP_NO_CONTENT);
     }
 }

@@ -6,7 +6,14 @@ use Illuminate\Database\Eloquent\Model;
 use App\User;
 
 class Status extends Model
-{
+{   
+    protected $guarded = [];
+
+    public function getRouteKeyName()
+    {
+        return 'slug';    
+    }
+
     public function user() 
     {
         return $this->belongsTo(User::class);
@@ -20,5 +27,10 @@ class Status extends Model
     public function category()
     {
         return $this->belongsTo(Category::class);
+    }
+
+    public function getPathAttribute()
+    {
+        return asset("api/status/$this->slug");
     }
 }

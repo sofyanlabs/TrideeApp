@@ -20,7 +20,7 @@ class CreateRepliesTable extends Migration
             $table->unsignedBigInteger('status_id');
             $table->unsignedBigInteger('user_id');
 
-            $table->foreign('status_id')->references('id')->on('status')
+            $table->foreign('status_id')->references('id')->on('statuses')
             ->onDelete('cascade');
             $table->timestamps();
         });
