@@ -17,10 +17,10 @@ class CreateRepliesTable extends Migration
             $table->bigIncrements('id');
             $table->text('body');
 
-            $table->integer('status_id')->unsigned();
-            $table->integer('user_id');
+            $table->unsignedBigInteger('status_id');
+            $table->unsignedBigInteger('user_id');
 
-            $table->foreign('status_id')->references('id')->on('statuses')
+            $table->foreign('status_id')->references('id')->on('status')
             ->onDelete('cascade');
             $table->timestamps();
         });
