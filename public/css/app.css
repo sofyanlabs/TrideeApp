@@ -18782,6 +18782,7 @@ MIT (https://github.com/Wikiki/bulma-steps/blob/master/LICENSE)
   .logo {
     width: 100%;
     margin-top: 0 !important;
+    text-align: center;
     padding: 1em;
     position: static;
     background-color: #2296F3;
@@ -18806,10 +18807,6 @@ MIT (https://github.com/Wikiki/bulma-steps/blob/master/LICENSE)
   .button.is-fullwidth-mobile {
     display: flex;
     width: 100%;
-  }
-
-  .login-modal {
-    margin-top: 1em;
   }
 }
 

@@ -1925,13 +1925,39 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-var ModalForm = {
-  template: "\n            <form action=\"\">\n                <div class=\"modal-card\" style=\"width: auto; padding: 0 2em;\">\n                    <header class=\"modal-card-head\">\n                        <p class=\"modal-card-title\">Login</p>\n                    </header>\n                    <section class=\"modal-card-body\">\n                        <b-field label=\"Email\">\n                            <b-input\n                                type=\"email\"\n                                placeholder=\"Your email\"\n                                required>\n                            </b-input>\n                        </b-field>\n\n                        <b-field label=\"Password\">\n                            <b-input\n                                type=\"password\"\n                                password-reveal\n                                placeholder=\"Your password\"\n                                required>\n                            </b-input>\n                        </b-field>\n                    </section>\n                    <footer class=\"modal-card-foot\">\n                        <button class=\"button\" type=\"button\" @click=\"$parent.close()\">Close</button>\n                        <button class=\"button is-primary\">Login</button>\n                    </footer>\n                </div>\n            </form>\n        "
-};
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  components: {
-    ModalForm: ModalForm
-  },
   data: function data() {
     return {
       isComponentModalActive: false,
@@ -1940,6 +1966,11 @@ var ModalForm = {
         password: null
       }
     };
+  },
+  methods: {
+    login: function login() {
+      User.login(this.form);
+    }
   }
 });
 
@@ -53199,81 +53230,99 @@ var render = function() {
           _vm._m(0),
           _vm._v(" "),
           _c("div", { staticClass: "column is-6" }, [
-            _c("div", { staticClass: "columns login" }, [
-              _c("h1", { staticClass: "title pl-1" }, [_vm._v("Login")]),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "column is-4 is-offset-2" },
-                [
+            _c(
+              "form",
+              {
+                on: {
+                  submit: function($event) {
+                    $event.preventDefault()
+                    return _vm.login($event)
+                  }
+                }
+              },
+              [
+                _c("div", { staticClass: "columns login" }, [
                   _c(
-                    "b-field",
+                    "div",
+                    { staticClass: "column is-4 is-offset-2" },
                     [
-                      _c("b-input", {
-                        attrs: { placeholder: "Email", required: "" },
-                        model: {
-                          value: _vm.form.email,
-                          callback: function($$v) {
-                            _vm.$set(_vm.form, "email", $$v)
-                          },
-                          expression: "form.email"
-                        }
-                      })
-                    ],
-                    1
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "column is-4" },
-                [
-                  _c(
-                    "b-field",
-                    [
-                      _c("b-input", {
-                        attrs: {
-                          placeholder: "Password",
-                          type: "password",
-                          required: "",
-                          "password-reveal": ""
-                        },
-                        model: {
-                          value: _vm.form.password,
-                          callback: function($$v) {
-                            _vm.$set(_vm.form, "password", $$v)
-                          },
-                          expression: "form.password"
-                        }
-                      })
+                      _c(
+                        "b-field",
+                        [
+                          _c("b-input", {
+                            attrs: {
+                              placeholder: "Email",
+                              type: "email",
+                              required: ""
+                            },
+                            model: {
+                              value: _vm.form.email,
+                              callback: function($$v) {
+                                _vm.$set(_vm.form, "email", $$v)
+                              },
+                              expression: "form.email"
+                            }
+                          })
+                        ],
+                        1
+                      )
                     ],
                     1
                   ),
                   _vm._v(" "),
-                  _c("a", { attrs: { href: "#" } }, [_vm._v("Lupa Password?")])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "column is-2" },
-                [
-                  _c("b-field", [
-                    _c(
-                      "button",
-                      {
-                        staticClass: "button is-primary is-rounded is-outlined"
-                      },
-                      [_vm._v("Login")]
-                    )
-                  ])
-                ],
-                1
-              )
-            ]),
+                  _c(
+                    "div",
+                    { staticClass: "column is-4" },
+                    [
+                      _c(
+                        "b-field",
+                        [
+                          _c("b-input", {
+                            attrs: {
+                              placeholder: "Password",
+                              type: "password",
+                              required: "",
+                              "password-reveal": ""
+                            },
+                            model: {
+                              value: _vm.form.password,
+                              callback: function($$v) {
+                                _vm.$set(_vm.form, "password", $$v)
+                              },
+                              expression: "form.password"
+                            }
+                          })
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c("a", { attrs: { href: "#" } }, [
+                        _vm._v("Lupa Password?")
+                      ])
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "column is-2" },
+                    [
+                      _c("b-field", [
+                        _c(
+                          "button",
+                          {
+                            staticClass:
+                              "button is-primary is-rounded is-outlined"
+                          },
+                          [_vm._v("Login")]
+                        )
+                      ])
+                    ],
+                    1
+                  )
+                ])
+              ]
+            ),
             _vm._v(" "),
             _c(
               "div",
@@ -53392,6 +53441,10 @@ var render = function() {
                   1
                 ),
                 _vm._v(" "),
+                _c("p", { staticClass: "has-text-centered pt-1 pb-1" }, [
+                  _vm._v("atau")
+                ]),
+                _vm._v(" "),
                 _c(
                   "button",
                   {
@@ -53405,7 +53458,7 @@ var render = function() {
                   },
                   [
                     _vm._v(
-                      "\r\n                            Login\r\n                        "
+                      "\r\n                            Sudah Punya Akun\r\n                        "
                     )
                   ]
                 ),
@@ -53423,8 +53476,95 @@ var render = function() {
                       }
                     }
                   },
-                  [_c("modal-form")],
-                  1
+                  [
+                    _c(
+                      "form",
+                      {
+                        on: {
+                          submit: function($event) {
+                            $event.preventDefault()
+                            return _vm.login($event)
+                          }
+                        }
+                      },
+                      [
+                        _c(
+                          "div",
+                          {
+                            staticClass: "modal-card",
+                            staticStyle: { width: "auto", padding: "0 2em" }
+                          },
+                          [
+                            _c("header", { staticClass: "modal-card-head" }, [
+                              _c("p", { staticClass: "modal-card-title" }, [
+                                _vm._v("Login")
+                              ])
+                            ]),
+                            _vm._v(" "),
+                            _c(
+                              "section",
+                              { staticClass: "modal-card-body" },
+                              [
+                                _c(
+                                  "b-field",
+                                  { attrs: { label: "Email" } },
+                                  [
+                                    _c("b-input", {
+                                      attrs: {
+                                        type: "email",
+                                        placeholder: "Email",
+                                        required: ""
+                                      },
+                                      model: {
+                                        value: _vm.form.email,
+                                        callback: function($$v) {
+                                          _vm.$set(_vm.form, "email", $$v)
+                                        },
+                                        expression: "form.email"
+                                      }
+                                    })
+                                  ],
+                                  1
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "b-field",
+                                  { attrs: { label: "Password" } },
+                                  [
+                                    _c("b-input", {
+                                      attrs: {
+                                        type: "password",
+                                        "password-reveal": "",
+                                        placeholder: "Password",
+                                        required: ""
+                                      },
+                                      model: {
+                                        value: _vm.form.password,
+                                        callback: function($$v) {
+                                          _vm.$set(_vm.form, "password", $$v)
+                                        },
+                                        expression: "form.password"
+                                      }
+                                    })
+                                  ],
+                                  1
+                                )
+                              ],
+                              1
+                            ),
+                            _vm._v(" "),
+                            _c("footer", { staticClass: "modal-card-foot" }, [
+                              _c(
+                                "button",
+                                { staticClass: "button is-primary" },
+                                [_vm._v("Login")]
+                              )
+                            ])
+                          ]
+                        )
+                      ]
+                    )
+                  ]
                 )
               ],
               1
@@ -68418,6 +68558,215 @@ module.exports = function(module) {
 
 /***/ }),
 
+/***/ "./resources/js/Helpers/AppStorage.js":
+/*!********************************************!*\
+  !*** ./resources/js/Helpers/AppStorage.js ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+var AppStorage =
+/*#__PURE__*/
+function () {
+  function AppStorage() {
+    _classCallCheck(this, AppStorage);
+  }
+
+  _createClass(AppStorage, [{
+    key: "storeToken",
+    value: function storeToken(token) {
+      localStorage.setItem('token', token);
+    }
+  }, {
+    key: "storeUser",
+    value: function storeUser(user) {
+      localStorage.setItem('user', user);
+    }
+  }, {
+    key: "store",
+    value: function store(user, token) {
+      this.storeToken(token);
+      this.storeUser(user);
+    }
+  }, {
+    key: "clear",
+    value: function clear() {
+      localStorage.removeItem('token');
+      localStorage.removeItem('user');
+    }
+  }, {
+    key: "getToken",
+    value: function getToken() {
+      return localStorage.getItem('token');
+    }
+  }, {
+    key: "getUser",
+    value: function getUser() {
+      return localStorage.getItem('user');
+    }
+  }]);
+
+  return AppStorage;
+}();
+
+/* harmony default export */ __webpack_exports__["default"] = (AppStorage = new AppStorage());
+
+/***/ }),
+
+/***/ "./resources/js/Helpers/Token.js":
+/*!***************************************!*\
+  !*** ./resources/js/Helpers/Token.js ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+var Token =
+/*#__PURE__*/
+function () {
+  function Token() {
+    _classCallCheck(this, Token);
+  }
+
+  _createClass(Token, [{
+    key: "isValid",
+    value: function isValid(token) {
+      var payload = this.payload(token);
+
+      if (payload) {
+        return payload.iss == "http://localhost:8000/api/auth/login" ? true : false;
+      }
+
+      return false;
+    }
+  }, {
+    key: "payload",
+    value: function payload(token) {
+      var payload = token.split('.')[1];
+      return this.decode(payload);
+    }
+  }, {
+    key: "decode",
+    value: function decode(payload) {
+      return JSON.parse(atob(payload));
+    }
+  }]);
+
+  return Token;
+}();
+
+/* harmony default export */ __webpack_exports__["default"] = (Token = new Token());
+
+/***/ }),
+
+/***/ "./resources/js/Helpers/User.js":
+/*!**************************************!*\
+  !*** ./resources/js/Helpers/User.js ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Token__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Token */ "./resources/js/Helpers/Token.js");
+/* harmony import */ var _AppStorage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./AppStorage */ "./resources/js/Helpers/AppStorage.js");
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+
+
+
+var User =
+/*#__PURE__*/
+function () {
+  function User() {
+    _classCallCheck(this, User);
+  }
+
+  _createClass(User, [{
+    key: "login",
+    value: function login(data) {
+      var _this = this;
+
+      axios.post('/api/auth/login', data).then(function (res) {
+        return _this.responseAfterLogin(res);
+      })["catch"](function (error) {
+        return console.log(error.response.data);
+      });
+    }
+  }, {
+    key: "responseAfterLogin",
+    value: function responseAfterLogin(res) {
+      var access_token = res.data.access_token;
+      var username = res.data.user;
+
+      if (_Token__WEBPACK_IMPORTED_MODULE_0__["default"].isValid(access_token)) {
+        _AppStorage__WEBPACK_IMPORTED_MODULE_1__["default"].store(username, access_token);
+      }
+    }
+  }, {
+    key: "hasToken",
+    value: function hasToken() {
+      var storedToken = _AppStorage__WEBPACK_IMPORTED_MODULE_1__["default"].getToken();
+
+      if (storedToken) {
+        return _Token__WEBPACK_IMPORTED_MODULE_0__["default"].isValid(storedToken) ? true : false;
+      }
+
+      return false;
+    }
+  }, {
+    key: "loggedIn",
+    value: function loggedIn() {
+      return this.hasToken();
+    }
+  }, {
+    key: "logout",
+    value: function logout() {
+      _AppStorage__WEBPACK_IMPORTED_MODULE_1__["default"].clear();
+    }
+  }, {
+    key: "name",
+    value: function name() {
+      if (this.loggedIn()) {
+        return _AppStorage__WEBPACK_IMPORTED_MODULE_1__["default"].getUser();
+      }
+    }
+  }, {
+    key: "id",
+    value: function id() {
+      if (this.loggedIn()) {
+        var payload = _Token__WEBPACK_IMPORTED_MODULE_0__["default"].payload(_AppStorage__WEBPACK_IMPORTED_MODULE_1__["default"].getToken());
+        return payload.sub;
+      }
+    }
+  }]);
+
+  return User;
+}();
+
+/* harmony default export */ __webpack_exports__["default"] = (User = new User());
+
+/***/ }),
+
 /***/ "./resources/js/Router/router.js":
 /*!***************************************!*\
   !*** ./resources/js/Router/router.js ***!
@@ -68458,7 +68807,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var buefy__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! buefy */ "./node_modules/buefy/dist/buefy.js");
 /* harmony import */ var buefy__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(buefy__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _Router_router_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Router/router.js */ "./resources/js/Router/router.js");
+/* harmony import */ var _Helpers_User__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Helpers/User */ "./resources/js/Helpers/User.js");
+/* harmony import */ var _Router_router_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Router/router.js */ "./resources/js/Router/router.js");
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
@@ -68470,6 +68820,8 @@ window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.
 
 
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(buefy__WEBPACK_IMPORTED_MODULE_1___default.a);
+
+window.User = _Helpers_User__WEBPACK_IMPORTED_MODULE_2__["default"];
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
@@ -68491,7 +68843,7 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('AppAuth', __webpack_requir
 
 var app = new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
   el: '#app',
-  router: _Router_router_js__WEBPACK_IMPORTED_MODULE_2__["default"]
+  router: _Router_router_js__WEBPACK_IMPORTED_MODULE_3__["default"]
 });
 
 /***/ }),

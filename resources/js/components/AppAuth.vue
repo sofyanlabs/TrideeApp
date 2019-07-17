@@ -14,25 +14,26 @@
                     <section class="hero is-fullheight owl-image"></section>
                 </div>
                 <div class="column is-6">
-                    <div class="columns login">
-                        <h1 class="title pl-1">Login</h1>
-                        <div class="column is-4 is-offset-2">
-                            <b-field>
-                                <b-input placeholder="Email" v-model="form.email"  required ></b-input>
-                            </b-field>
+                    <form @submit.prevent="login">
+                        <div class="columns login">
+                            <div class="column is-4 is-offset-2">
+                                <b-field>
+                                    <b-input placeholder="Email" type="email" v-model="form.email"  required ></b-input>
+                                </b-field>
+                            </div>
+                            <div class="column is-4">
+                                <b-field>
+                                    <b-input placeholder="Password" type="password" v-model="form.password" required password-reveal></b-input>
+                                </b-field>
+                                <a href="#">Lupa Password?</a>
+                            </div>
+                            <div class="column is-2">
+                                <b-field>
+                                    <button class="button is-primary is-rounded is-outlined">Login</button>
+                                </b-field>
+                            </div>
                         </div>
-                        <div class="column is-4">
-                            <b-field>
-                                <b-input placeholder="Password" type="password" v-model="form.password" required password-reveal></b-input>
-                            </b-field>
-                            <a href="#">Lupa Password?</a>
-                        </div>
-                        <div class="column is-2">
-                            <b-field>
-                                <button class="button is-primary is-rounded is-outlined">Login</button>
-                            </b-field>
-                        </div>
-                    </div>
+                    </form>
                     
                     <div class="daftar">
                         <h1 class="title has-text-centered-mobile">Buat Akun Baru</h1>
@@ -68,13 +69,44 @@
                             </p>
                         </form>
 
+                        <p class="has-text-centered pt-1 pb-1">atau</p>
+
                         <button class="button is-primary is-outlined is-fullwidth login-modal"
                             @click="isComponentModalActive = true">
-                            Login
+                            Sudah Punya Akun
                         </button>
 
                         <b-modal :active.sync="isComponentModalActive" has-modal-card>
-                            <modal-form></modal-form>
+                            <form  @submit.prevent="login">
+                                <div class="modal-card" style="width: auto; padding: 0 2em;">
+                                    <header class="modal-card-head">
+                                        <p class="modal-card-title">Login</p>
+                                    </header>
+                                    <section class="modal-card-body">
+                                        <b-field label="Email">
+                                            <b-input
+                                                type="email"
+                                                placeholder="Email"
+                                                v-model="form.email"
+                                                required>
+                                            </b-input>
+                                        </b-field>
+
+                                        <b-field label="Password">
+                                            <b-input
+                                                type="password"
+                                                password-reveal
+                                                placeholder="Password"
+                                                v-model="form.password"
+                                                required>
+                                            </b-input>
+                                        </b-field>
+                                    </section>
+                                    <footer class="modal-card-foot">
+                                        <button class="button is-primary">Login</button>
+                                    </footer>
+                                </div>
+                            </form>
                         </b-modal>
                     </div>
                     
@@ -86,43 +118,7 @@
 </template>
 
 <script>
-const ModalForm = {
-    template: `
-            <form action="">
-                <div class="modal-card" style="width: auto; padding: 0 2em;">
-                    <header class="modal-card-head">
-                        <p class="modal-card-title">Login</p>
-                    </header>
-                    <section class="modal-card-body">
-                        <b-field label="Email">
-                            <b-input
-                                type="email"
-                                placeholder="Your email"
-                                required>
-                            </b-input>
-                        </b-field>
-
-                        <b-field label="Password">
-                            <b-input
-                                type="password"
-                                password-reveal
-                                placeholder="Your password"
-                                required>
-                            </b-input>
-                        </b-field>
-                    </section>
-                    <footer class="modal-card-foot">
-                        <button class="button" type="button" @click="$parent.close()">Close</button>
-                        <button class="button is-primary">Login</button>
-                    </footer>
-                </div>
-            </form>
-        `
-}
 export default {
-    components: {
-            ModalForm
-        },
     data() {
         return {
             isComponentModalActive: false,
@@ -130,6 +126,11 @@ export default {
                 email: null,
                 password: null
             }
+        }
+    }, 
+    methods: {
+        login() {
+            User.login(this.form)
         }
     }
 }
