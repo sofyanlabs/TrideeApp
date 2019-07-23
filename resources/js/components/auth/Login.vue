@@ -37,30 +37,30 @@
                     
                     <div class="daftar">
                         <h1 class="title has-text-centered-mobile">Buat Akun Baru</h1>
-                        <form action="#" >
+                        <form @submit.prevent="register" >
                             <b-field>
-                                <b-input placeholder="Nama Lengkap" required></b-input>
+                                <b-input placeholder="Nama Lengkap" required v-model="regis.name"></b-input>
                             </b-field>
                             <b-field>
-                                <b-input placeholder="Email" type="email" required></b-input>
+                                <b-input placeholder="Email" type="email" required v-model="regis.email"></b-input>
                             </b-field>
                             <b-field>
-                                <b-input placeholder="Nomor Telepon" required></b-input>
+                                <b-input placeholder="Nomor Telepon" required v-model="regis.phone" onkeypress='return event.charCode >= 48 && event.charCode <= 57'></b-input>
                             </b-field>
                             <b-field>
-                                <b-input placeholder="Password" type="password" password-reveal required></b-input>
+                                <b-input placeholder="Password" type="password" password-reveal required v-model="regis.password"></b-input>
                             </b-field>
                             <b-field grouped>
                                 <b-field label="Kota Asal">
-                                    <b-select placeholder="Kota Asal" required>
-                                        <option>Jakarta</option>
-                                        <option>Depok</option>
+                                    <b-select placeholder="Kota Asal" required v-model="regis.city">
+                                        <option value="Jakarta">Jakarta</option>
+                                        <option value="Depok">Depok</option>
                                     </b-select>
                                 </b-field>
                                 <b-field label="Jenis Kelamin">
-                                    <b-select placeholder="Jenis Kelamin" required>
-                                        <option>Laki - Laki</option>
-                                        <option>Perempuan</option>
+                                    <b-select placeholder="Jenis Kelamin" required v-model="regis.gender">
+                                        <option value="Laki - Laki">Laki - Laki</option>
+                                        <option value="Perempuan">Perempuan</option>
                                     </b-select>
                                 </b-field>
                             </b-field>
@@ -68,13 +68,14 @@
                                 <button class="button is-primary is-fullwidth-mobile">Daftar</button>
                             </p>
                         </form>
-
-                        <p class="has-text-centered pt-1 pb-1">atau</p>
-
-                        <button class="button is-primary is-outlined is-fullwidth login-modal"
-                            @click="isComponentModalActive = true">
-                            Sudah Punya Akun
-                        </button>
+                        
+                        <div class="login-modal">
+                            <p class="has-text-centered pt-1 pb-1">atau</p>
+                            <button class="button is-primary is-outlined is-fullwidth"
+                                @click="isComponentModalActive = true">
+                                Sudah Punya Akun
+                            </button>
+                        </div>
 
                         <b-modal :active.sync="isComponentModalActive" has-modal-card>
                             <form  @submit.prevent="login">
@@ -109,7 +110,6 @@
                             </form>
                         </b-modal>
                     </div>
-                    
                 </div>
             </div>
         </div>
@@ -125,12 +125,28 @@ export default {
             form: {
                 email: null,
                 password: null
-            }
+            },
+            regis: {
+                name: null,
+                email: null,
+                phone: null,
+                password: null,
+                city: null,
+                gender: null
+            },
+            errors:{}
         }
     }, 
     methods: {
         login() {
             User.login(this.form)
+        },
+
+        register(){
+            axios.post('/api/auth/signup', this.regis)
+            .then(res => {User.responseAfterLogin(res)
+            })
+            .catch(error => this.errors = error.response.data.errors)
         }
     }
 }

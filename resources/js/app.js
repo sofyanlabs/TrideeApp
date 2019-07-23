@@ -12,7 +12,11 @@ import Buefy from 'buefy'
 Vue.use(Buefy)
 
 import User from './Helpers/User'
+
 window.User = User
+
+
+window.EventBus = new Vue();
 
 
 /**
@@ -27,7 +31,6 @@ window.User = User
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
 
 Vue.component('AppHome', require('./components/AppHome.vue').default);
-Vue.component('AppAuth', require('./components/AppAuth.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

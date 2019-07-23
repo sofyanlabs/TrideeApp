@@ -1,0 +1,121 @@
+$body-bg: #111111; 
+$body-content: #222222;
+
+a {
+    color: unset;
+    
+    &:hover {
+        color: unset;
+    }
+}
+
+
+.navbar {
+    background-color: $primary; 
+
+    .navbar-item {
+        background-color: unset !important;
+        color: white !important;
+
+        img {
+            max-height: unset;
+        }
+    }
+
+    .navbar-menu {
+        align-items: center;
+
+        .navbar-center {
+            margin-left: auto;
+            max-width: 440px;
+            width: 100%;
+        }
+
+        .navbar-end {
+            .button {
+                background-color: unset;
+                border: none;
+                color: white;
+            }
+        }
+    }
+}
+
+.columns {
+    min-height: calc(100vh - 5.4rem);
+}
+
+.menu-bar {
+    background-color: $body-bg;
+
+    .menu {
+        padding-top: 20px;
+        padding-bottom: 40px;
+
+        &:not(:last-child) {
+        border-bottom: 1px solid rgba(151,151,151,0.2);
+        }
+
+        .menu-item {
+            display: block;
+            width: 100%;
+            color: white;
+            padding: 5px 0 5px 25px;
+
+            &.is-active {
+                border-left: 4px $primary solid;
+                background-color: rgba($primary, .5);
+                padding-left: 21px;
+            }
+
+            &.icons {
+                display: flex;
+                align-items:center;
+
+                span {
+                    padding-left: 20px;
+                }
+            }
+        }
+    }
+        
+}
+
+.contents {
+    background-color: $body-content;
+}
+
+.footers {
+    position: absolute;
+    width: 100%;
+    padding: 5px 0;
+}
+
+.columns.is-gapless:not(:last-child) {
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 1023px) {
+    .navbar-icon {
+        align-items: center;
+        display: flex;
+        margin-left: auto;
+        
+        .icon {
+            color: white;
+            margin-right: 15px;
+        }
+    }
+
+    .mobile-nav {
+        padding: 1em 0;
+        background-color: $body-bg;
+        color: white;
+
+        .level-item {
+            .is-active {
+                color: $primary;
+            }
+        }
+    }
+}

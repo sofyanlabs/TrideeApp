@@ -12,8 +12,7 @@
 <body>
 
     <div id="app">
-        {{-- <app-home></app-home> --}}
-        <app-auth></app-auth>
+        <app-home></app-home>
     </div>
     
 <script src="{{mix('js/app.js')}}"></script>

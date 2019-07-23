@@ -18834,3 +18834,116 @@ MIT (https://github.com/Wikiki/bulma-steps/blob/master/LICENSE)
   }
 }
 
+a {
+  color: unset;
+}
+
+a:hover {
+  color: unset;
+}
+
+.navbar {
+  background-color: #2296F3;
+}
+
+.navbar .navbar-item {
+  background-color: unset !important;
+  color: white !important;
+}
+
+.navbar .navbar-item img {
+  max-height: unset;
+}
+
+.navbar .navbar-menu {
+  align-items: center;
+}
+
+.navbar .navbar-menu .navbar-center {
+  margin-left: auto;
+  max-width: 440px;
+  width: 100%;
+}
+
+.navbar .navbar-menu .navbar-end .button {
+  background-color: unset;
+  border: none;
+  color: white;
+}
+
+.columns {
+  min-height: calc(100vh - 5.4rem);
+}
+
+.menu-bar {
+  background-color: #111111;
+}
+
+.menu-bar .menu {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.menu-bar .menu:not(:last-child) {
+  border-bottom: 1px solid rgba(151, 151, 151, 0.2);
+}
+
+.menu-bar .menu .menu-item {
+  display: block;
+  width: 100%;
+  color: white;
+  padding: 5px 0 5px 25px;
+}
+
+.menu-bar .menu .menu-item.is-active {
+  border-left: 4px #2296F3 solid;
+  background-color: rgba(34, 150, 243, 0.5);
+  padding-left: 21px;
+}
+
+.menu-bar .menu .menu-item.icons {
+  display: flex;
+  align-items: center;
+}
+
+.menu-bar .menu .menu-item.icons span {
+  padding-left: 20px;
+}
+
+.contents {
+  background-color: #222222;
+}
+
+.footers {
+  position: absolute;
+  width: 100%;
+  padding: 5px 0;
+}
+
+.columns.is-gapless:not(:last-child) {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 1023px) {
+  .navbar-icon {
+    align-items: center;
+    display: flex;
+    margin-left: auto;
+  }
+
+  .navbar-icon .icon {
+    color: white;
+    margin-right: 15px;
+  }
+
+  .mobile-nav {
+    padding: 1em 0;
+    background-color: #111111;
+    color: white;
+  }
+
+  .mobile-nav .level-item .is-active {
+    color: #2296F3;
+  }
+}
+
