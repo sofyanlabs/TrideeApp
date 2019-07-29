@@ -1,5 +1,6 @@
 $body-bg: #111111; 
 $body-content: #222222;
+$body-white: #e9ebee;
 
 a {
     color: unset;
@@ -12,6 +13,10 @@ a {
 
 .navbar {
     background-color: $primary; 
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
 
     .navbar-item {
         background-color: unset !important;
@@ -41,12 +46,13 @@ a {
     }
 }
 
-.columns {
-    min-height: calc(100vh - 5.4rem);
-}
-
 .menu-bar {
     background-color: $body-bg;
+    position: fixed;
+    top: 3.25em;
+    z-index: 9999;
+    min-height: calc(100vh - 5.4rem);
+    width: 220px;
 
     .menu {
         padding-top: 20px;
@@ -81,21 +87,27 @@ a {
         
 }
 
-.contents {
-    background-color: $body-content;
+.page {
+    margin-left: 220px;
+    margin-top: 52px;
+    padding-bottom: 30px;
+    min-height: calc(100vh - 5.4rem);
 }
 
 .footers {
-    position: absolute;
+    position: fixed;
+    bottom: 0;
     width: 100%;
     padding: 5px 0;
-}
-
-.columns.is-gapless:not(:last-child) {
-    margin-bottom: 0;
+    z-index: 9999;
 }
 
 @media screen and (max-width: 1023px) {
+    .page {
+        margin: 0;
+        padding-top: 104px;
+    }
+
     .navbar-icon {
         align-items: center;
         display: flex;
@@ -108,6 +120,10 @@ a {
     }
 
     .mobile-nav {
+        position: fixed;
+        z-index: 9999;
+        margin-top: 52px;
+        width: 100%;
         padding: 1em 0;
         background-color: $body-bg;
         color: white;
