@@ -1,5 +1,5 @@
 <template>
-    <div class="content-view">
+    <div class="content-view bg-dark">
         <swiper :options="swiperOption">
             <swiper-slide>
                 <img src="/img/slider/1.jpg" alt="Gambar 1">
@@ -20,7 +20,7 @@
 
         <section class="section daftar-kelas">
             <h2 class="title has-text-white has-text-centered">Kelas Sedang Berjalan</h2>
-            <div class="level is-centers has-text-centered">
+            <div class="level is-center has-text-centered">
                 <div class="level-item is-narrow">
                     <figure class="image is-128x128">
                         <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
@@ -522,6 +522,29 @@
         </section>
     </div>
 </template>
+
+<style lang="scss">
+
+.daftar-kelas {
+    margin: 2em 0;
+
+    h2 {
+        padding-bottom: 1em;
+    }
+
+    .level {
+        padding: 1em;
+        margin: 0;
+
+        &:hover {
+            background-color: rgba(#222222, 0.3);
+            transition-property: background-color;
+            transition-duration: .6s;
+        }
+    }
+}
+</style>
+
 
 <script>
   export default {

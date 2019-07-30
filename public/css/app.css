@@ -19376,86 +19376,6 @@ MIT (https://github.com/Wikiki/bulma-steps/blob/master/LICENSE)
   background: rgba(255, 56, 96, 0.05);
 }
 
-.container.brand {
-  position: relative;
-}
-
-.container.brand .logo {
-  margin-top: 20px;
-  position: absolute;
-}
-
-.bg-color {
-  height: 100%;
-  background: linear-gradient(90deg, #2296F3 50%, #FFF 50%);
-}
-
-.bg-color .owl-image {
-  background-image: url("/img/component/owl.svg");
-  background-repeat: no-repeat;
-  background-position: top right;
-}
-
-.bg-color .login {
-  margin: 0;
-}
-
-@media (max-width: 768px) {
-  .logo {
-    width: 100%;
-    margin-top: 0 !important;
-    text-align: center;
-    padding: 1em;
-    position: static;
-    background-color: #2296F3;
-  }
-
-  .bg-color {
-    background: white;
-  }
-
-  .owl-full {
-    display: none;
-  }
-
-  .login {
-    display: none;
-  }
-
-  .daftar {
-    padding: 6em 2em;
-  }
-
-  .button.is-fullwidth-mobile {
-    display: flex;
-    width: 100%;
-  }
-}
-
-@media (min-width: 769px) {
-  .daftar {
-    padding: 5em;
-  }
-
-  .login {
-    padding-top: 20px;
-  }
-
-  .login .title {
-    display: none;
-  }
-
-  .login-modal {
-    display: none !important;
-  }
-}
-
-@media (min-width: 1200px) {
-  .daftar {
-    padding: 8em;
-  }
-}
-
 a {
   color: unset;
 }
@@ -19540,8 +19460,20 @@ a:hover {
 .page {
   margin-left: 220px;
   margin-top: 52px;
-  padding-bottom: 30px;
   min-height: calc(100vh - 5.4rem);
+}
+
+.content-view {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.content-view.bg-dark {
+  background-color: #222222;
+}
+
+.content-view.bg-white {
+  background-color: #e9ebee;
 }
 
 .footers {
@@ -19550,6 +19482,40 @@ a:hover {
   width: 100%;
   padding: 5px 0;
   z-index: 9999;
+}
+
+.box {
+  box-shadow: none;
+  border: none;
+}
+
+.swiper-container {
+  padding: 0 0 30px 0;
+}
+
+.swiper-pagination-bullet {
+  background: #2296F3;
+}
+
+.swiper-pagination-bullet-active {
+  background: #2296F3;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  background-size: 15px;
+}
+
+.level.is-center {
+  justify-content: center;
+}
+
+.level.is-start {
+  justify-content: start;
+}
+
+.level .level-item:not(:last-child) {
+  margin-right: 20px;
 }
 
 @media screen and (max-width: 1023px) {
@@ -19582,58 +19548,10 @@ a:hover {
   .mobile-nav .level-item .is-active {
     color: #2296F3;
   }
-}
 
-.content-view {
-  background-color: #222222;
-  padding-top: 20px;
-}
-
-.swiper-container {
-  padding: 0 0 30px 0;
-}
-
-.swiper-pagination-bullet {
-  background: #fff;
-}
-
-.swiper-pagination-bullet-active {
-  background: #2296F3;
-}
-
-.swiper-button-prev,
-.swiper-button-next {
-  background-size: 15px;
-}
-
-.daftar-kelas {
-  margin: 2em 0;
-}
-
-.daftar-kelas h2 {
-  padding-bottom: 1em;
-}
-
-.daftar-kelas .level {
-  padding: 1em;
-  margin: 0;
-}
-
-.daftar-kelas .level:hover {
-  background-color: rgba(34, 34, 34, 0.3);
-  transition-property: background-color;
-  transition-duration: 0.6s;
-}
-
-.level.is-centers {
-  justify-content: center;
-}
-
-.level.is-start {
-  justify-content: start;
-}
-
-.level .level-item:not(:last-child) {
-  margin-right: 20px;
+  .flip-column {
+    flex-direction: column-reverse;
+    display: flex;
+  }
 }
 

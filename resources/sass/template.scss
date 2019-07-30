@@ -1,7 +1,3 @@
-$body-bg: #111111; 
-$body-content: #222222;
-$body-white: #e9ebee;
-
 a {
     color: unset;
     
@@ -90,8 +86,20 @@ a {
 .page {
     margin-left: 220px;
     margin-top: 52px;
-    padding-bottom: 30px;
     min-height: calc(100vh - 5.4rem);
+}
+
+.content-view {
+    padding-top: 20px;
+    padding-bottom: 40px;
+
+    &.bg-dark {
+        background-color: $body-content;
+    }
+
+    &.bg-white {
+        background-color: #e9ebee;
+    }
 }
 
 .footers {
@@ -100,6 +108,47 @@ a {
     width: 100%;
     padding: 5px 0;
     z-index: 9999;
+}
+
+//component
+
+.box { 
+    box-shadow: none;
+    border: none;
+}
+
+//Swiper
+
+.swiper-container {
+    padding: 0 0 30px 0;
+}
+
+.swiper-pagination-bullet {
+    background: #2296F3;
+}
+
+.swiper-pagination-bullet-active {
+    background: $primary;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    background-size: 15px;
+}
+
+// Helper kelas 
+
+.level {
+    &.is-center {
+        justify-content: center;
+    }
+
+    &.is-start {
+        justify-content: start;
+    }
+
+    .level-item:not(:last-child) {
+        margin-right: 20px;
+    }
 }
 
 @media screen and (max-width: 1023px) {
@@ -133,5 +182,10 @@ a {
                 color: $primary;
             }
         }
+    }
+
+    .flip-column {
+        flex-direction: column-reverse;
+        display: flex;
     }
 }

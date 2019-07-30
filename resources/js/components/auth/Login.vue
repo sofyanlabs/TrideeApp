@@ -117,6 +117,87 @@
 </div>
 </template>
 
+<style lang="scss">
+.container.brand {
+    position: relative;
+    .logo {
+        margin-top: 20px;
+        position: absolute;
+    }
+}
+
+.bg-color {
+    height: 100%;
+    background: linear-gradient(90deg, #2296F3 50%, #FFF 50%);
+    .owl-image {
+        background-image: url('/img/component/owl.svg');
+        background-repeat: no-repeat;
+        background-position: top right;
+    }
+
+    .login {
+        margin: 0;
+    }
+}
+
+//Responsive
+@media (max-width: 768px) {
+    .logo {
+        width: 100%;
+        margin-top: 0 !important;
+        text-align: center;
+        padding: 1em;
+        position: static;
+        background-color: #2296F3;
+    }
+    .bg-color {
+        background: white;
+    }
+    .owl-full {
+        display: none;
+    }
+
+    .login {
+        display: none;
+    }
+
+    .daftar {
+        padding: 6em 2em;
+    }
+
+    .button.is-fullwidth-mobile {
+        display: flex;
+        width: 100%;
+    }
+}
+
+@media (min-width: 769px) {
+    .daftar {
+        padding: 5em;
+    }
+
+    .login {
+        padding-top: 20px;
+        .title {
+            display: none;
+        }
+    }
+
+    .login-modal {
+        display: none !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .daftar {
+        padding: 8em;
+    }
+}
+
+
+</style>
+
+
 <script>
 export default {
     data() {
@@ -151,7 +232,3 @@ export default {
     }
 }
 </script>
-
-<style>
-
-</style>
