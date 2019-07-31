@@ -90,8 +90,8 @@ a {
 }
 
 .content-view {
-    padding-top: 20px;
     padding-bottom: 40px;
+    min-height: calc(100vh - 5.4rem);
 
     &.bg-dark {
         background-color: $body-content;
@@ -148,6 +148,10 @@ a {
 
     .level-item:not(:last-child) {
         margin-right: 20px;
+    }
+
+    .level-left, .level-right {
+        flex-shrink: 1;
     }
 }
 

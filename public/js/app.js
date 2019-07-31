@@ -2347,6 +2347,171 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/content/Coin.vue?vue&type=script&lang=js&":
+/*!***********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/content/Coin.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/content/Forum.vue?vue&type=script&lang=js&":
 /*!************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/content/Forum.vue?vue&type=script&lang=js& ***!
@@ -23546,6 +23711,25 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 // module
 exports.push([module.i, ".container.brand {\n  position: relative;\n}\n.container.brand .logo {\n  margin-top: 20px;\n  position: absolute;\n}\n.bg-color {\n  height: 100%;\n  background: linear-gradient(90deg, #2296F3 50%, #FFF 50%);\n}\n.bg-color .owl-image {\n  background-image: url(\"/img/component/owl.svg\");\n  background-repeat: no-repeat;\n  background-position: top right;\n}\n.bg-color .login {\n  margin: 0;\n}\n@media (max-width: 768px) {\n.logo {\n    width: 100%;\n    margin-top: 0 !important;\n    text-align: center;\n    padding: 1em;\n    position: static;\n    background-color: #2296F3;\n}\n.bg-color {\n    background: white;\n}\n.owl-full {\n    display: none;\n}\n.login {\n    display: none;\n}\n.daftar {\n    padding: 6em 2em;\n}\n.button.is-fullwidth-mobile {\n    display: flex;\n    width: 100%;\n}\n}\n@media (min-width: 769px) {\n.daftar {\n    padding: 5em;\n}\n.login {\n    padding-top: 20px;\n}\n.login .title {\n    display: none;\n}\n.login-modal {\n    display: none !important;\n}\n}\n@media (min-width: 1200px) {\n.daftar {\n    padding: 8em;\n}\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/content/Coin.vue?vue&type=style&index=0&id=94d2925c&lang=scss&scoped=true&":
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/lib/loader.js??ref--7-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/content/Coin.vue?vue&type=style&index=0&id=94d2925c&lang=scss&scoped=true& ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".coin-header[data-v-94d2925c] {\n  background: linear-gradient(0deg, rgba(34, 150, 243, 0.5), rgba(34, 150, 243, 0.5)), url(\"/img/component/coin/bg-coin.jpg\");\n  height: 100%;\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: cover;\n}\n.coin-header .big[data-v-94d2925c] {\n  font-size: 5rem;\n}\n.beli-coin[data-v-94d2925c] {\n  padding: 1em;\n}\n.beli-coin[data-v-94d2925c]:hover {\n  background-color: #555555;\n  border-radius: 5px;\n}", ""]);
 
 // exports
 
@@ -54466,6 +54650,36 @@ if(false) {}
 
 /***/ }),
 
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/content/Coin.vue?vue&type=style&index=0&id=94d2925c&lang=scss&scoped=true&":
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/lib/loader.js??ref--7-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/content/Coin.vue?vue&type=style&index=0&id=94d2925c&lang=scss&scoped=true& ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--7-2!../../../../node_modules/sass-loader/lib/loader.js??ref--7-3!../../../../node_modules/vue-loader/lib??vue-loader-options!./Coin.vue?vue&type=style&index=0&id=94d2925c&lang=scss&scoped=true& */ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/content/Coin.vue?vue&type=style&index=0&id=94d2925c&lang=scss&scoped=true&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/content/Forum.vue?vue&type=style&index=0&id=b522f3a0&lang=scss&scoped=true&":
 /*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/lib/loader.js??ref--7-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/content/Forum.vue?vue&type=style&index=0&id=b522f3a0&lang=scss&scoped=true& ***!
@@ -64158,10 +64372,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/content/Coin.vue?vue&type=template&id=94d2925c&":
-/*!***************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/content/Coin.vue?vue&type=template&id=94d2925c& ***!
-  \***************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/content/Coin.vue?vue&type=template&id=94d2925c&scoped=true&":
+/*!***************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/content/Coin.vue?vue&type=template&id=94d2925c&scoped=true& ***!
+  \***************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -64173,16 +64387,230 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "content-view bg-dark pt-0" }, [
+    _c("section", { staticClass: "section is-medium coin-header" }, [
+      _c("div", { staticClass: "container" }, [
+        _c(
+          "div",
+          { staticClass: "has-text-centered" },
+          [
+            _c("h1", { staticClass: "title is-size-2 has-text-white" }, [
+              _vm._v("Jumlah Koin")
+            ]),
+            _vm._v(" "),
+            _vm._m(0),
+            _vm._v(" "),
+            _c(
+              "b-tag",
+              {
+                staticClass: "is-rounded has-text-weight-bold",
+                attrs: { type: "is-warning", size: "is-large" }
+              },
+              [_vm._v("1 CT = Rp.10.000,-")]
+            )
+          ],
+          1
+        )
+      ])
+    ]),
+    _vm._v(" "),
+    _vm._m(1)
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [
-      _c("h1", { staticClass: "title has-text-centered has-text-white" }, [
-        _vm._v("Halaman Coin")
+    return _c("div", { staticClass: "level" }, [
+      _c("div", { staticClass: "level-item" }, [
+        _c("figure", { staticClass: "image is-96x96 mr-2" }, [
+          _c("img", { attrs: { src: "/img/component/coin/coin-tridee.png" } })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "title big has-text-white" }, [_vm._v("500")])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("section", { staticClass: "section" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "has-text-centered pb-4" }, [
+          _c("h2", { staticClass: "title is-size-4 has-text-white" }, [
+            _vm._v("Beli Koin")
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "columns is-centered" }, [
+          _c("div", { staticClass: "column is-one-third-widescreen" }, [
+            _c("a", { attrs: { href: "" } }, [
+              _c("div", { staticClass: "level is-center beli-coin" }, [
+                _c("div", { staticClass: "level-left" }, [
+                  _c("div", { staticClass: "level-item" }, [
+                    _c("figure", { staticClass: "image is-64x64 mr-2" }, [
+                      _c("img", {
+                        attrs: { src: "/img/component/coin/coin-5.png" }
+                      })
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "level-right" }, [
+                  _c("div", { staticClass: "is-size-6 has-text-white" }, [
+                    _c("b", [_vm._v("Rp.50.000")]),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(
+                      "\n                                    Tidak ada bonus koin\n                                "
+                    )
+                  ])
+                ])
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "column is-one-third-widescreen" }, [
+            _c("a", { attrs: { href: "" } }, [
+              _c("div", { staticClass: "level is-center beli-coin" }, [
+                _c("div", { staticClass: "level-left" }, [
+                  _c("div", { staticClass: "level-item" }, [
+                    _c("figure", { staticClass: "image is-64x64 mr-2" }, [
+                      _c("img", {
+                        attrs: { src: "/img/component/coin/coin-10.png" }
+                      })
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "level-right" }, [
+                  _c("div", { staticClass: "is-size-6 has-text-white" }, [
+                    _c("b", [_vm._v("Rp.100.000")]),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(
+                      "\n                                    Tidak ada bonus koin\n                                "
+                    )
+                  ])
+                ])
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "columns is-centered" }, [
+          _c("div", { staticClass: "column is-one-third-widescreen" }, [
+            _c("a", { attrs: { href: "" } }, [
+              _c("div", { staticClass: "level is-center beli-coin" }, [
+                _c("div", { staticClass: "level-left" }, [
+                  _c("div", { staticClass: "level-item" }, [
+                    _c("figure", { staticClass: "image is-64x64 mr-2" }, [
+                      _c("img", {
+                        attrs: { src: "/img/component/coin/coin-20.png" }
+                      })
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "level-right" }, [
+                  _c("div", { staticClass: "is-size-6 has-text-white" }, [
+                    _c("b", [_vm._v("Rp.200.000")]),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(
+                      "\n                                    Tidak ada bonus koin\n                                "
+                    )
+                  ])
+                ])
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "column is-one-third-widescreen" }, [
+            _c("a", { attrs: { href: "" } }, [
+              _c("div", { staticClass: "level is-center beli-coin" }, [
+                _c("div", { staticClass: "level-left" }, [
+                  _c("div", { staticClass: "level-item" }, [
+                    _c("figure", { staticClass: "image is-64x64 mr-2" }, [
+                      _c("img", {
+                        attrs: { src: "/img/component/coin/coin-30.png" }
+                      })
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "level-right" }, [
+                  _c("div", { staticClass: "is-size-6 has-text-white" }, [
+                    _c("b", [_vm._v("Rp.300.000")]),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(
+                      "\n                                    Tidak ada bonus koin\n                                "
+                    )
+                  ])
+                ])
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "columns is-centered" }, [
+          _c("div", { staticClass: "column is-one-third-widescreen" }, [
+            _c("a", { attrs: { href: "" } }, [
+              _c("div", { staticClass: "level is-center beli-coin" }, [
+                _c("div", { staticClass: "level-left" }, [
+                  _c("div", { staticClass: "level-item" }, [
+                    _c("figure", { staticClass: "image is-64x64 mr-2" }, [
+                      _c("img", {
+                        attrs: { src: "/img/component/coin/coin-55.png" }
+                      })
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "level-right" }, [
+                  _c("div", { staticClass: "is-size-6 has-text-white" }, [
+                    _c("b", [_vm._v("Rp.500.000")]),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(
+                      "\n                                    50 Koin + Bonus 5 Koin\n                                "
+                    )
+                  ])
+                ])
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "column is-one-third-widescreen" }, [
+            _c("a", { attrs: { href: "" } }, [
+              _c("div", { staticClass: "level is-center beli-coin" }, [
+                _c("div", { staticClass: "level-left" }, [
+                  _c("div", { staticClass: "level-item" }, [
+                    _c("figure", { staticClass: "image is-64x64 mr-2" }, [
+                      _c("img", {
+                        attrs: { src: "/img/component/coin/coin-110.png" }
+                      })
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "level-right" }, [
+                  _c("div", { staticClass: "is-size-6 has-text-white" }, [
+                    _c("b", [_vm._v("Rp.1.000.000")]),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(
+                      "\n                                    100 Koin + Bonus 10 Koin\n                                "
+                    )
+                  ])
+                ])
+              ])
+            ])
+          ])
+        ])
       ])
     ])
   }
@@ -64208,7 +64636,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "content-view bg-white" }, [
+  return _c("div", { staticClass: "content-view bg-white pt-2" }, [
     _c("section", { staticClass: "section" }, [
       _c(
         "div",
@@ -64750,7 +65178,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "content-view bg-dark" },
+    { staticClass: "content-view bg-dark pt-2" },
     [
       _c(
         "swiper",
@@ -81535,21 +81963,25 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Coin_vue_vue_type_template_id_94d2925c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Coin.vue?vue&type=template&id=94d2925c& */ "./resources/js/components/content/Coin.vue?vue&type=template&id=94d2925c&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _Coin_vue_vue_type_template_id_94d2925c_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Coin.vue?vue&type=template&id=94d2925c&scoped=true& */ "./resources/js/components/content/Coin.vue?vue&type=template&id=94d2925c&scoped=true&");
+/* harmony import */ var _Coin_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Coin.vue?vue&type=script&lang=js& */ "./resources/js/components/content/Coin.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _Coin_vue_vue_type_style_index_0_id_94d2925c_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Coin.vue?vue&type=style&index=0&id=94d2925c&lang=scss&scoped=true& */ "./resources/js/components/content/Coin.vue?vue&type=style&index=0&id=94d2925c&lang=scss&scoped=true&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
-var script = {}
+
+
+
 
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
-  script,
-  _Coin_vue_vue_type_template_id_94d2925c___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Coin_vue_vue_type_template_id_94d2925c___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+  _Coin_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Coin_vue_vue_type_template_id_94d2925c_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Coin_vue_vue_type_template_id_94d2925c_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
-  null,
+  "94d2925c",
   null
   
 )
@@ -81561,19 +81993,49 @@ component.options.__file = "resources/js/components/content/Coin.vue"
 
 /***/ }),
 
-/***/ "./resources/js/components/content/Coin.vue?vue&type=template&id=94d2925c&":
-/*!*********************************************************************************!*\
-  !*** ./resources/js/components/content/Coin.vue?vue&type=template&id=94d2925c& ***!
-  \*********************************************************************************/
+/***/ "./resources/js/components/content/Coin.vue?vue&type=script&lang=js&":
+/*!***************************************************************************!*\
+  !*** ./resources/js/components/content/Coin.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Coin_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./Coin.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/content/Coin.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Coin_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/content/Coin.vue?vue&type=style&index=0&id=94d2925c&lang=scss&scoped=true&":
+/*!************************************************************************************************************!*\
+  !*** ./resources/js/components/content/Coin.vue?vue&type=style&index=0&id=94d2925c&lang=scss&scoped=true& ***!
+  \************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_lib_loader_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Coin_vue_vue_type_style_index_0_id_94d2925c_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader!../../../../node_modules/css-loader!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--7-2!../../../../node_modules/sass-loader/lib/loader.js??ref--7-3!../../../../node_modules/vue-loader/lib??vue-loader-options!./Coin.vue?vue&type=style&index=0&id=94d2925c&lang=scss&scoped=true& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/content/Coin.vue?vue&type=style&index=0&id=94d2925c&lang=scss&scoped=true&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_lib_loader_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Coin_vue_vue_type_style_index_0_id_94d2925c_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_lib_loader_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Coin_vue_vue_type_style_index_0_id_94d2925c_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_lib_loader_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Coin_vue_vue_type_style_index_0_id_94d2925c_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_lib_loader_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Coin_vue_vue_type_style_index_0_id_94d2925c_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_lib_loader_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Coin_vue_vue_type_style_index_0_id_94d2925c_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "./resources/js/components/content/Coin.vue?vue&type=template&id=94d2925c&scoped=true&":
+/*!*********************************************************************************************!*\
+  !*** ./resources/js/components/content/Coin.vue?vue&type=template&id=94d2925c&scoped=true& ***!
+  \*********************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Coin_vue_vue_type_template_id_94d2925c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./Coin.vue?vue&type=template&id=94d2925c& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/content/Coin.vue?vue&type=template&id=94d2925c&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Coin_vue_vue_type_template_id_94d2925c___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Coin_vue_vue_type_template_id_94d2925c_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./Coin.vue?vue&type=template&id=94d2925c&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/content/Coin.vue?vue&type=template&id=94d2925c&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Coin_vue_vue_type_template_id_94d2925c_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Coin_vue_vue_type_template_id_94d2925c___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Coin_vue_vue_type_template_id_94d2925c_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

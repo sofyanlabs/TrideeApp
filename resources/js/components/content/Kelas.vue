@@ -1,5 +1,5 @@
 <template>
-    <div class="content-view bg-dark">
+    <div class="content-view bg-dark pt-2">
         <swiper :options="swiperOption">
             <swiper-slide>
                 <img src="/img/slider/1.jpg" alt="Gambar 1">

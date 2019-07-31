@@ -1,5 +1,5 @@
 <template>
-    <div class="content-view bg-white">
+    <div class="content-view bg-white pt-2">
         <section class="section">
             <div class="container is-widescreen">
                 <swiper :options="swiperOption">
